@@ -1,116 +1,157 @@
 .container {
-  padding: 0 2rem;
-}
-
-.main {
   min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  width: 100%;
+
+}
+
+.header {
+  width: 100%;
+  height: 96px;
+  border-bottom: 1px solid grey;
+
 }
 
 .footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
+  width: 100%;
+  border-top: 1px solid grey;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
+  height: 96px;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.section{
+  background-color: white;
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.subsection{
+  position: relative;
+  width: 455px;
+  height: 480px;
+  margin-left:1px;
+  margin-right:1px;
+
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+.image{
+  width:100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background: no-repeat center top;
+  background-size: cover;
+
 }
 
-.title,
-.description {
+.image.image1{
+  background-image: url("/Group\ 1443.png");
+}
+
+.image.image2{
+  background-image: url("/Group\ 1444.png");
+}
+
+.image.image3{
+  background-image: url("/Group\ 1445.png");
+}
+
+
+.categorydetails{
+  position:absolute;
+  bottom:20%;
   text-align: center;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+.title{
+  font: bold 24px Helvetica;
+  font-stretch: condensed;
+  color: white;
+  text-transform: uppercase;
+  cursor: default;
+
 }
 
-.code {
-  background: #fafafa;
+.button{
+  font: bold 16px Helvetica;
+  font-stretch: condensed;
+  color: white;
+  height: 40px;
   border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  border: 1px solid white;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 16px 11px;
+  width: 160px;
+
 }
 
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
+.button a {
+  cursor:default;
+  display: inline-block;
+  width: 100%;
+  color: white;
   text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.button:hover {
+  background-color: white;
+  color: black;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.button:hover a{
+  color:black;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
+@media (max-width: 768px) {
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+  .subsection{
+    width: 255px;
+    height: 320px;
   }
+
+  .categorydetails{
+    bottom: 10%;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .button{
+    border-color: transparent;
+    transition: border 1s;
+  }
+
+  .button:hover{
+    border: 1px solid white;
+
+  }
+
+  .section{
+    overflow: scroll;
+    justify-content: left;
+    /* for firefox */
+    scrollbar-width: none;
+  }
+
+  /* for chrome, safari and opera */
+  .section::-webkit-scrollbar{
+    display: none;
+  }
+
+  .subsection{
+    min-width: 255px;
+  }
+
+
 }

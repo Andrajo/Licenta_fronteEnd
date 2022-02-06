@@ -1,0 +1,276 @@
+.section{
+    background-color: white;
+    margin:auto;
+    display: grid;
+    grid-template-columns: 630px 610px;
+    justify-content: left;
+    overflow:scroll;
+    max-width: 1404px;
+}
+
+.topdetails{
+    margin-top: 60px;
+    position: relative;
+    max-width:1366px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    font: bold 24px Helvetica;
+    font-stretch: condensed;
+    cursor: default;
+    text-transform: uppercase;
+    margin-left: 16px;
+}
+
+.explore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.bigscreen{
+    font: bold 24px Helvetica;
+    font-stretch: condensed;
+    cursor: default;
+    text-transform: uppercase;
+}
+
+.explore a{
+    margin-left: 10px;
+    height: 24px;
+}
+
+.smallscreen{
+    display: none;
+}
+
+.subsection{
+    margin-top: 27px;
+    width: 610px;
+    height: auto;
+    position: relative;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 2px;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    min-width: 315px;
+}
+
+.deletebutton{
+    background-color: #007bff;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border: 2px solid antiquewhite;
+}
+
+.toptitle{
+    position: absolute;
+    left:55%;
+    top:0;
+}
+
+.topprice{
+    position: absolute;
+    left:55%;
+    top:20%;
+}
+.fullprice{
+    position: absolute;
+    left:55%;
+    top:35%;
+}
+
+.productbuttons button{
+    margin: 2px;
+}
+
+.productbuttons button:hover{
+    opacity: 1;
+}
+
+.deletebutton:hover{
+    background-color: #0d6efd;
+}
+
+.paymentbutton{
+    font: bold 24px Helvetica;
+    border: 2px solid gray;
+    width: 160px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #007bff;
+    position: relative;
+    top:10px;
+    left: 85%;
+}
+
+.paymentbutton a{
+    color: #FFFFFF !important;
+}
+
+.paymentbutton a{
+    text-decoration: none;
+    color: black;
+}
+
+.paymentbutton a:hover{
+    color: black;
+}
+
+.paymentbutton:hover{
+    background-color: #0d6efd;
+}
+
+.countbutton{
+    border-radius: 20px;
+    width: 30px;
+    opacity: 0.5;
+}
+
+/* for chrome, safari and opera */
+.section::-webkit-scrollbar{
+    display: none;
+}
+
+.imagecontainer{
+    height:181px;
+    overflow:hidden;
+    width: 315px;
+    background: no-repeat center top;
+    background-size: cover;
+}
+
+.topcategorydetails{
+    position:absolute;
+    top: 50%;
+    margin-left: 19px;
+    margin-right: 25px;
+}
+
+.toptitle{
+    margin-top: 20px;
+    font: bold 18px Helvetica;
+    font-stretch: condensed;
+    cursor: default;
+
+}
+
+.topdesc{
+    margin-top: 10px;
+    font: 16px Helvetica;
+    cursor: default;
+}
+
+.topprice{
+    margin-top: 14px;
+    font: bold 16px Helvetica;
+    font-stretch: condensed;
+    cursor: default;
+}
+
+.basketbutton{
+    font: bold 16px Helvetica;
+    font-stretch: condensed;
+    color:white;
+    background-color: #007bff;
+    height: 40px;
+    line-height: 38px;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    text-align: center;
+    width: 50%;
+    margin-top: 14px;
+}
+
+.basketbutton a {
+    cursor:default;
+    display: inline-block;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+
+}
+
+.smallpicture{
+    display: none;
+}
+
+.basketbutton:hover{
+    background-color: #0069D9;
+}
+
+@media (max-width: 1218px) {
+    .bigscreen{
+        display:none;
+    }
+    .smallscreen{
+        display: block;
+        font: bold 24px Helvetica;
+        font-stretch: condensed;
+        cursor: default;
+        text-transform: uppercase;
+    }
+
+    .section{
+        overflow: scroll;
+        justify-content: left;
+        /* for firefox */
+        scrollbar-width: none;
+        grid-template-columns: 630px;
+    }
+
+    /* for chrome, safari and opera */
+    .section::-webkit-scrollbar{
+        display: none;
+    }
+
+    .topsubsection{
+        min-width: 315px;
+    }
+
+    .paymentbutton{
+        left: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .smallscreen{
+        display: none;
+    }
+
+    .explore a{
+        display: none;
+    }
+
+    .imagecontainer{
+        display: none;
+    }
+
+    .subsection{
+        width: 260px;
+        height: 250px;
+    }
+
+    .toptitle{
+        left:0;
+        top:200px;
+    }
+
+    .topprice{
+        left:0;
+        top:180px;
+    }
+    .fullprice{
+        left:0;
+        top:160px;
+    }
+
+    .smallpicture{
+        display: block;
+    }
+}

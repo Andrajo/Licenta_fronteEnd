@@ -1,0 +1,43 @@
+.newsletter{display: flex;}
+
+@media (min-width: 768px) {
+    .mailfield {
+        top: 2246px;
+        left: 1034px;
+        width: 215px;
+        height: 38px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 4px 0px 0px 4px;
+        opacity: 1;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mailfield {
+        top: 1964px;
+        left: 227px;
+        width: 215px;
+        height: 30px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 4px 0px 0px 4px;
+        opacity: 1;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mailfield {
+        top: 1962px;
+        left: 50px;
+        width: 215px;
+        height: 38px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 4px 0px 0px 4px;
+        opacity: 1;
+        margin-bottom: 20px;
+    }
+}

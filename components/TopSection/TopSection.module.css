@@ -1,0 +1,448 @@
+#Anchor{
+    color:black;
+}
+#Anchor:hover{
+    color:#007BFF;
+}
+.navbar {
+    font-family: Helvetica;
+    font-size: 16px;
+    color: #343A40;
+    list-style-type: none;
+    top: 0;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 96px;
+    opacity: 1;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 6px #00000014;
+
+}
+
+
+.elem{
+    display: inline-flex;
+    position: relative;
+    left : 80px;
+    margin-left:35px;
+    border-top: 43px;
+    border-bottom: 13px;
+    height: 65px;
+
+}
+
+.elemLogo{
+    display:inline-flex;
+    position: fixed;
+    left: 0px;
+    border-top: 43px;
+    border-bottom: 13px;
+    height: 40px;
+
+}
+
+
+.elem > a {
+    color: #343A40;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    font-family: Helvetica;
+    font-size: 16px;
+    right:6rem;
+
+
+}
+
+.elem > a::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 5px;
+    width: 0;
+    top: 5px;
+    background: transparent;
+    transition: all 0.3s;
+
+
+}
+
+
+.elem > a:hover {
+    width: 100%;
+    color: #007BFF;
+
+}
+
+.elem > a:active {
+    text-decoration: underline;
+    color: #0069D9;
+}
+
+.logo{
+    width: 120px;
+    height: 96px;
+    overflow:hidden;
+    margin-top: 3px;
+    margin-bottom: -40px;
+
+}
+
+
+.navbarright {
+    float:right;
+    margin-right:20px;
+
+}
+
+.btnAccount
+{
+    display:inline-flex;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 60px;
+    height: 47px;
+    margin-top: 25px;
+    margin-right:30px;
+    opacity: 1;
+    background: url("../../public/group1349.svg") no-repeat;
+    background-position:top;
+    justify-content: center;
+    align-items:center;
+
+
+}
+
+.btnAccount:hover {
+    background: url("../../public/group1450.svg") no-repeat;
+    color:#007BFF;
+    background-position: top;
+}
+
+
+.btnAccount:active {
+    background: url("../../public/group1452.svg") no-repeat;
+    color:#0069D9;
+    background-position: top;
+}
+
+
+.btnBasket
+{
+    display:inline-flex;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 60px;
+    height: 47px;
+    margin-top: 25px;
+    opacity: 1;
+    background: url("../../public/group1442.svg") no-repeat;
+    background-position:top;
+    justify-content: center;
+    align-items:center;
+
+
+}
+
+.btnBasket:hover {
+    background: url("../../public/group1449.svg") no-repeat;
+    color:#007BFF;
+    background-position: top;
+}
+
+.btnBasket:active{
+
+    background: url("../../public/Group1451.svg") no-repeat;
+    color: #0069D9;
+    background-position: top;
+}
+
+.accountLabel{
+
+    margin-top: 20px;
+}
+
+.basketLabel{
+    margin-top: 20px;
+}
+
+.nav{
+    padding-inline-start: 0px;
+    margin-block-start: 8px;
+}
+
+
+.sidebar {
+    height: 100%;
+    width: auto;
+    padding-top: 60px;
+    display: none;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+}
+
+.sidebar a{
+    font-family: Helvetica;
+    padding-left: 18px;
+    padding-top: 17px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 0px;
+    color: #343A40;
+    display: block;
+    transition: 0.3s;
+    margin-top:10px;
+}
+
+
+.sidebarListElement:hover {
+    color: #007BFF;
+}
+
+.sidebarListElement:active,.btnMenuAccount:active,.btnMenuBasket:active{
+    text-decoration: underline;
+    color:  #0069D9;
+}
+
+.closebtn:active{
+    color:  #0069D9;
+}
+
+.sidebarListElement{
+    text-transform:uppercase;
+}
+
+.sidebarElement {
+    font-family: Helvetica;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #343A40;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+
+
+.openbtn {
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    overflow:hidden;
+    margin-top: 35px;
+
+
+
+}
+
+.closebtn {
+    cursor:pointer;
+    border:none;
+    background-color: transparent;
+    color: #CDD1D4;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+
+
+.openbtn:hover,.closebtn:hover {
+    color: #007BFF;
+}
+
+
+.openbtn:active,.closebtn:active {
+    color: #0069D9;
+}
+
+
+
+
+#main {
+    transition: margin-left 0.5s;
+    padding-left: 16px;
+}
+
+.btnMenuAccount
+{
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    top: 25px;
+    margin-left: 21px;
+    width: 16px;
+    height: 25px;
+    opacity: 1;
+    background: url("../../public/group1349.svg") no-repeat;
+    background-position:bottom;
+
+}
+
+.btnMenuAccount:hover {
+    background: url("../../public/group1450.svg") no-repeat;
+    color:#007BFF;
+    background-position:bottom;
+}
+
+
+.btnMenuAccount:active {
+    background: url("../../public/group1452.svg") no-repeat;
+    color:#0069D9;
+    background-position:bottom;
+}
+
+
+.btnMenuBasket
+{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 21px;
+    width: 20px;
+    height: 25px;
+    opacity: 1;
+    background: url("../../public/group1442.svg") no-repeat;
+    justify-content:left;
+    align-items:baseline;
+    float:left;
+    background-position:bottom;
+
+}
+
+.btnMenuBasket:hover {
+    background: url("../../public/group1449.svg") no-repeat;
+    color:#007BFF;
+    background-position:bottom;
+
+}
+
+.btnMenuBasket:active{
+
+    background: url("../../public/Group1451.svg") no-repeat;
+    color: #0069D9;
+    background-position:bottom;
+}
+
+.labelMenu{
+
+    margin-left: 20px;
+    margin-top: -13px;
+}
+
+.breakLineTitle{
+    margin-left:17px;
+    margin-right:17px;
+    margin-top:20px;
+    padding: 0px;
+    height: 0px;
+    background-color:#CDD1D4;
+    opacity: 70%;
+}
+
+.breakLine{
+    margin-left:17px;
+    margin-right:17px;
+    margin-top:20px;
+    padding: 0px;
+    height: 0px;
+    background-color:#CDD1D4;
+    opacity: 70%;
+}
+.badge:after {
+    content: attr(data-count);
+    position: absolute;
+    background: #262626;
+    height: 1.25rem;
+    top: 1.5rem;
+    right: 2rem;
+    width: 1.25rem;
+    text-align: center;
+    line-height: 1.25rem;
+    font-size: 0.75rem;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid black;
+    font-family: sans-serif;
+    font-weight: bold;
+    visibility: visible;
+}
+
+@media  (min-width:1024px) {
+    /*media query for desktops*/
+    /*hide the menu button and the side bar for this version*/
+    .sidebar,.elementMenuButton,#main { display:none;}
+    .elemLogo{
+        margin-left:17px;
+    }
+}
+
+@media  (min-width:481px) and (max-width:1023px){
+    #labelGelato,#labelGelatoS,#labelDonuts,#labelDonutsS,.btnMenuAccount,.btnMenuBasket,.breakLine{display: none !important;}
+    .navbarright{
+        display: flex;
+        position: relative;
+        align-content: baseline;
+    }
+    .btnAccount{
+        margin-right: 10px;
+    }
+    .elemLogo{
+        position: fixed;
+        left: calc(50% - 60px);
+    }
+    .elem > a{
+        font-size: 16px !important;
+    }
+    .openbtn{
+        margin-left: -120px;
+    }
+    #elementLogo{
+        display: none;
+    }
+}
+
+@media (max-width:480px)
+{
+    #elementLogo{
+        display: none;
+    }
+    #labelGelato,#labelGelatoS,#labelDonuts,#labelDonutsS{display: none;}
+    .btnAccount{display: none;}
+    .openbtn{
+        margin-left: -120px;
+    }
+    .elemLogo{
+        position: fixed;
+        left: calc(50% - 60px);
+    }
+    #topsection.elementLogo{
+        display: none;
+    }
+}
+
+#labelDonutsS{
+    display: none;
+}

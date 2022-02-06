@@ -1,0 +1,167 @@
+.section{
+    background-color: white;
+    margin:auto;
+    display: flex;
+    justify-content: left;
+    overflow:scroll;
+    max-width: 1404px;
+}
+
+.topdetails{
+    margin-top: 60px;
+    position: relative;
+    max-width:1366px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    font: bold 24px Helvetica;
+    font-stretch: condensed;
+    cursor: default;
+    text-transform: uppercase;
+    margin-left: 16px;
+}
+
+.explore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.bigscreen{
+    font: bold 24px Helvetica;
+    font-stretch: condensed;
+    cursor: default;
+    text-transform: uppercase;
+}
+
+.explore a{
+    margin-left: 10px;
+    height: 24px;
+}
+
+.smallscreen{
+    display: none;
+}
+
+.topsubsection{
+    margin-top: 27px;
+    width: 315px;
+    height: 388px;
+    position: relative;
+    margin-left: 12px;
+    margin-right: 12px;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    min-width: 315px;
+}
+
+/* for chrome, safari and opera */
+.section::-webkit-scrollbar{
+    display: none;
+}
+
+.imagecontainer{
+    height:181px;
+    overflow:hidden;
+    width: auto;
+    background: no-repeat center top;
+    background-size: cover;
+}
+
+.topcategorydetails{
+    position:absolute;
+    top: 50%;
+    margin-left: 19px;
+    margin-right: 25px;
+}
+
+.toptitle{
+    margin-top: 20px;
+    font: bold 18px Helvetica;
+    font-stretch: condensed;
+    cursor: default;
+
+}
+
+.topdesc{
+    margin-top: 10px;
+    font: 16px Helvetica;
+    cursor: default;
+}
+
+.topprice{
+    margin-top: 14px;
+    font: bold 16px Helvetica;
+    font-stretch: condensed;
+    cursor: default;
+}
+
+.basketbutton{
+    font: bold 16px Helvetica;
+    font-stretch: condensed;
+    color:white;
+    background-color: #007bff;
+    height: 40px;
+    line-height: 38px;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    text-align: center;
+    width: 50%;
+    margin-top: 14px;
+}
+
+.basketbutton a {
+    cursor:default;
+    display: inline-block;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+
+}
+
+.basketbutton:hover{
+    background-color: #0069D9;
+}
+
+@media (max-width: 768px) {
+    .bigscreen{
+        display:none;
+    }
+    .smallscreen{
+        display: block;
+        font: bold 24px Helvetica;
+        font-stretch: condensed;
+        cursor: default;
+        text-transform: uppercase;
+    }
+
+    .section{
+        overflow: scroll;
+        justify-content: left;
+        /* for firefox */
+        scrollbar-width: none;
+    }
+
+    /* for chrome, safari and opera */
+    .section::-webkit-scrollbar{
+        display: none;
+    }
+
+    .topsubsection{
+        min-width: 315px;
+    }
+}
+
+@media (max-width: 480px) {
+    .smallscreen{
+        display: none;
+    }
+
+    .explore a{
+        display: none;
+    }
+}

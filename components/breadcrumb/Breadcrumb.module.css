@@ -1,0 +1,38 @@
+.homeButton{
+    padding: 16px;
+    max-width:1366px;
+    width: 100%;
+    display: flex;
+}
+.linkButton{
+    position: relative;
+    padding: 16px;
+    max-width:1366px;
+    width: 100%;
+    display: flex;
+    color: #007BFF ;
+}
+@media (min-width : 1013px) {
+    .linkButton{
+        margin-left: 1px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    .homeButton{
+        margin-left: 1px !important;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+}
+@media (max-width : 1012px) {
+    .linkButton{
+        margin-left: 1px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    .homeButton{
+        margin-left: 1px !important;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+}

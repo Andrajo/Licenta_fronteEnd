@@ -1,0 +1,128 @@
+.loginbutton, .registerbutton {
+    grid-area: button;
+    text-align: center;
+    white-space: nowrap;
+    margin-left: 22px;
+    margin-bottom: 29px;
+    background-color: #343A40;
+    border-radius: 5px;
+    opacity: 1;
+    width: 60px;
+    height: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: white;
+}
+
+.loginbutton:hover {
+    background-color: #0069d9;
+    color: white;
+}
+.loginbutton:disabled {
+    background-color: #58aaff;
+}
+.registerbutton:hover {
+    background-color: #0069d9;
+    color: white;
+}
+.registerbutton:disabled {
+    background-color: #58aaff;
+}
+
+
+.registerbutton{
+    position: relative;
+    right: 1.8vw;
+    top: 2vh;
+    grid-area: registerbtn;
+}
+
+.loginbutton{
+    width: 100px;
+    position: relative;
+    left: -9vw;
+    top: 3vh;
+    grid-area: loginbtn;
+}
+
+.login, .register{
+    height: 30px;
+    width: 20vw;
+}
+
+.login{
+    grid-area: login;
+}
+
+.register{
+    grid-area: register;
+}
+
+.usernameText{
+    grid-area: username;
+}
+
+.passwordText{
+    margin-top: 10px;
+    grid-area: password;
+}
+
+
+.confirmPassText{
+    margin-top: 10px;
+    grid-area: confirmPassText;
+}
+
+.confirmPassword{
+    grid-area: confirmPassword;
+}
+
+.firstNameText{
+    margin-top: 10px;
+    grid-area: firstNameText;
+}
+
+.firstname{
+    grid-area: firstname;
+}
+
+.countryText {
+    margin-top: 10px;
+    grid-area: countryText;
+}
+
+.country{
+    grid-area: country;
+}
+
+.ageText {
+    margin-top: 10px;
+    grid-area: ageText;
+}
+
+.ageSelect{
+    grid-area: ageSelect;
+}
+
+.AccountButton{
+    position: relative;
+    left: 2vw;
+    display:grid;
+    justify-content: center;
+    grid-template-areas:
+    "username"
+    "login"
+    "password"
+    "register"
+    "confirmPassText"
+    "confirmPassword"
+    "firstNameText"
+    "firstname"
+    "countryText"
+    "country"
+    "ageText"
+    "ageSelect"
+    "loginbutton";
+}

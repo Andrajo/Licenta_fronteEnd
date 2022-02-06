@@ -1,0 +1,22 @@
+.categoryName {
+    padding-left: 17px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    font-family: "Helvetica", "Arial", sans-serif;
+    letter-spacing: 0pt;
+    color: #343a40;
+    text-align: left;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.itemList {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.itemList::-webkit-scrollbar {
+    display: none;
+}

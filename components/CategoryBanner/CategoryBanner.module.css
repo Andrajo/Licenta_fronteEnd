@@ -1,0 +1,29 @@
+.categoryBanner{
+    max-width: 85.375em;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 260px;
+    overflow: hidden;
+    background: no-repeat center top;
+    background-size: cover;
+}
+
+.text{
+    position: absolute;
+    font: bold 24px Helvetica;
+    font-stretch: condensed;
+    cursor: default;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+@media (max-width: 768px) {
+    .categoryBanner{
+        height: 146px;
+    }
+}
+

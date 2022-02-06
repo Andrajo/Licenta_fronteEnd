@@ -1,0 +1,41 @@
+.firstname{
+    grid-area: firstname;
+    padding: 50px;
+}
+
+.level{
+    position: relative;
+    top: 20%;
+    grid-area: levelAcount;
+    padding-bottom: 200px;
+}
+
+.username{
+    position: relative;
+    top: 20%;
+    grid-area: username;
+}
+
+.age{
+    grid-area: age;
+    padding: 50px;
+}
+
+.country{
+    grid-area: country;
+    padding: 50px;
+}
+
+.personal{
+    position: absolute;
+    top:55%;
+    left:15%;
+}
+
+.container{
+    justify-content: center;
+    display: grid;
+    grid-template-areas:
+    "username username levelAcount"
+    "firstname age country";
+}

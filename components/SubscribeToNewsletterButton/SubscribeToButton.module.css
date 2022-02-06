@@ -1,0 +1,88 @@
+.subscribeButton:active {
+    background-color: #5a6268;
+    color: #ffffff;
+}
+.subscribeButton:disabled {
+    background-color: #b0b6ba !important;
+    color: #ffffff !important;
+    border: 3px solid #b0b6ba !important;
+}
+
+@media (min-width: 768px) {
+    .subscribeButton {
+        top: 2246px;
+        left: 1249px;
+        width: 94px;
+        height: 38px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 3px solid #ffffff;
+        border-radius: 0px 4px 4px 0px;
+        text-align: left;
+        font: normal normal bold 16px/20px Helvetica Neue;
+        letter-spacing: 0.38px;
+        color: #6c757d;
+        opacity: 1;
+        font-size: 15px;
+    }
+    .subscribeButton:hover {
+        background-color: #6c757d;
+        color: #ffffff;
+        border: 3px solid #6c757d;
+        border-radius: 0px 4px 4px 0px;
+        font: Helvetica;
+    }
+}
+
+@media (max-width: 768px) {
+    .subscribeButton {
+        top: 1964px;
+        left: 442px;
+        width: 94px;
+        height: 30px;
+        border: 1px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 3px solid #ffffff;
+        border-radius: 0px 4px 4px 0px;
+        text-align: left;
+        font: normal normal bold 16px/20px Helvetica Neue;
+        letter-spacing: 0.38px;
+        font-size: 15px;
+        color: #6c757d;
+        opacity: 1;
+        margin-bottom: 20px;
+    }
+
+    .subscribeButton:hover {
+        background-color: #6c757d;
+        color: #ffffff;
+        border: 3px solid #6c757d;
+        font: Helvetica Neue;
+        display: inline;
+    }
+}
+
+@media (max-width: 480px) {
+    .subscribeButton {
+        top: 1962px;
+        left: 265px;
+        width: 94px;
+        height: 38px;
+        border: 1px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #6c757d;
+        border-radius: 0px 4px 4px 0px;
+        text-align: left;
+        font: normal normal bold 16px/20px Helvetica Neue;
+        letter-spacing: 0.38px;
+        font-size: 16px;
+        color: #6c757d;
+        opacity: 1;
+    }
+
+    .subscribeButton:hover {
+        background-color: #6c757d;
+        color: #ffffff;
+        border: 1px solid #6c757d;
+        font: Helvetica;
+    }
+}
